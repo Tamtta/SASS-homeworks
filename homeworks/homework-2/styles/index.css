@@ -239,7 +239,7 @@ table {
   color: #2c3e50;
   text-transform: uppercase;
   margin-bottom: 12px;
-  letter-spacing: 1.25px;
+  letter-spacing: 1.35px;
 }
 .container .grid-container .div .inner-div-for-h3-and-p p {
   font-family: Lato-Regular, sans-serif;
@@ -304,22 +304,27 @@ table {
 }
 .container .grid-container .div .fa-exclamation {
   font-size: 24px;
+  line-height: 26px;
   color: #a47503;
 }
 .container .grid-container .div .fa-check {
   font-size: 24px;
+  line-height: 26px;
   color: #558502;
 }
 .container .grid-container .div .fa-xmark {
   font-size: 24px;
+  line-height: 26px;
   color: #d52e13;
 }
 .container .grid-container .div .fa-bolt {
   font-size: 24px;
+  line-height: 26px;
   color: #0787d4;
 }
 .container .grid-container .div .fa-info {
   font-size: 24px;
+  line-height: 26px;
   color: #5b568e;
 }
 .container .grid-container .div .fa-x {
