@@ -6,7 +6,7 @@
 .container {
   width: 1171.78px;
   height: 632.52px;
-  margin: 0 auto;
+  margin: 30px auto;
 
   h1 {
     @include fonts-and-sizes(Lato-Light, 30px, #2c3e50);
@@ -23,7 +23,7 @@
       border: 1px solid #e2e6e7;
       position: relative;
       border-radius: 10px;
-      padding: 40px 0 0 50px;
+      padding: 42px 0 0 50px;
       display: flex;
 
       &:last-child {
@@ -35,7 +35,7 @@
           @include fonts-and-sizes(Lato-Black, 14px, #2c3e50);
           text-transform: uppercase;
           margin-bottom: 12px;
-          letter-spacing: 1.25px;
+          letter-spacing: 1.35px;
         }
 
         p {
