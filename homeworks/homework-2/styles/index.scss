@@ -1,0 +1,140 @@
+@import "reset.scss";
+@import "palette.scss";
+@import "fonts.scss";
+@import "shared.scss";
+
+.container {
+  width: 1171.78px;
+  height: 632.52px;
+  margin: 30px auto;
+
+  h1 {
+    @include fonts-and-sizes(Lato-Light, 30px, #2c3e50);
+    text-transform: capitalize;
+    margin-bottom: 52px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(2, 570px);
+    gap: 30px;
+
+    .div {
+      &.div {
+        &-1 {
+          @include divs($primary-color-1);
+        }
+
+        &-2 {
+          @include divs($primary-color-2);
+        }
+
+        &-3 {
+          @include divs($primary-color-3);
+        }
+
+        &-4 {
+          @include divs($primary-color-4);
+        }
+
+        &-5 {
+          @include divs($primary-color-5);
+        }
+      }
+
+      &:last-child {
+        grid-column: span 2;
+      }
+
+      .inner-div-for-h3-and-p {
+        h3 {
+          @include fonts-and-sizes(Lato-Black, 14px, #2c3e50);
+          text-transform: uppercase;
+          margin-bottom: 12px;
+          letter-spacing: 1.25px;
+        }
+
+        p {
+          @include fonts-and-sizes(Lato-Regular, 14px, #2c3e50);
+          line-height: 24px;
+        }
+      }
+
+      .circle {
+        &-yellow {
+          @include circles($primary-color-1);
+          @include border($primary-border-cl-1);
+        }
+
+        &-green {
+          @include circles($primary-color-2);
+          @include border($primary-border-cl-2);
+        }
+
+        &-red {
+          @include circles($primary-color-3);
+          @include border($primary-border-cl-3);
+        }
+
+        &-blue {
+          @include circles($primary-color-4);
+          @include border($primary-border-cl-4);
+        }
+
+        &-purple {
+          @include circles($primary-color-5);
+          @include border($primary-border-cl-5);
+        }
+      }
+
+      .fa {
+        &-exclamation {
+          @include icons($primary-icon-cl-1);
+        }
+
+        &-check {
+          @include icons($primary-icon-cl-2);
+        }
+
+        &-xmark {
+          @include icons($primary-icon-cl-3);
+        }
+
+        &-bolt {
+          @include icons($primary-icon-cl-4);
+        }
+
+        &-info {
+          @include icons($primary-icon-cl-5);
+        }
+      }
+
+      .fa-x {
+        font-size: 14px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+
+        &-1 {
+          color: $primary-icon-cl-1;
+        }
+
+        &-2 {
+          color: $primary-icon-cl-2;
+        }
+
+        &-3 {
+          color: $primary-icon-cl-3;
+        }
+
+        &-4 {
+          color: $primary-icon-cl-4;
+        }
+
+        &-5 {
+          color: $primary-icon-cl-5;
+        }
+      }
+    }
+  }
+}
