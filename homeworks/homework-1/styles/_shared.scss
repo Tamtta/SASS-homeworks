@@ -1,0 +1,25 @@
+@mixin circles($primary-color: black) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+}
+
+@mixin border($primary-border-cl: black) {
+  border: 7px solid $primary-border-cl;
+}
+
+@mixin icons($primary-icon-cl: black) {
+  font-size: 24px;
+  color: $primary-icon-cl;
+}
+
+@mixin fonts-and-sizes($font-family, $font-size, $color) {
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  color: $color;
+}
